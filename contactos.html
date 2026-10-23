@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Restaurant - Contactos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <img src="/img/LOGO2.png" alt="Logo de Delta Restaurant">
+        <h1>Delta Restaurant</h1>
+        <h2>Comunícate con nosotros o visítanos</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section>
+            <h3>Formulario de Contacto y Reservas</h3>
+            <p>Completa el formulario para realizar tus reservas o enviarnos tus comentarios:</p>
+            
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="apellidos">Apellidos:</label><br>
+                <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" name="edad" min="1" max="120" required><br><br>
+
+                <label for="direccion">Dirección de Domicilio:</label><br>
+                <input type="text" id="direccion" name="direccion_domicilio" required><br><br>
+
+                <label for="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" name="correo_electronico" required><br><br>
+
+                <label for="telefono">Número Telefónico:</label><br>
+                <input type="tel" id="telefono" name="numero_telefonico" required><br><br>
+
+                <label for="mensaje">Mensaje o Comentarios:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar Información</button>
+            </form>
+        </section>
+
+        <section>
+            <h3>Nuestra Ubicación Geográfica</h3>
+            <p>Encuéntranos en nuestra sede principal:</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4114570446086!2d-75.5702626252426!3d6.209336976734911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428299b5aa6d9%3A0x2020c055ff96b671!2sEl%20Poblado%2C%20Medell%C3%ADn%2C%20El%20Poblado%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1792718086324!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p><strong>Contacto:</strong> Teléfono: +57 (314) 695 76 96 | Correo: deltarestaurant@delta.com </p>
+        <p><strong>Enlaces Rápidos:</strong> <a href="index.html">Inicio</a> | <a href="contactos.html">Contactos</a></p>
+        <p>&copy; 2026 Delta Restaurant. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+/* ESTILOS GENERALES Y PALETA DE COLORES (DELTA)*/
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #f5f5f5;
+    --text-muted: #b0b0b0;
+    --accent-gold: #c5a059; 
+    --border-color: #333333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+header {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: var(--text-main);
+}
+
+header h2 {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-gold);
+}
+
+/* SECCIONES PRINCIPALES Y CONTENIDO */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--bg-card);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+}
+
+h3 {
+    color: var(--accent-gold);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Estilo para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Listas de beneficios */
+ol {
+    padding-left: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* TABLA DE MENÚ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #161616;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #222222;
+    color: var(--accent-gold);
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #2a2a2a;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+}
+
+button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 12px;
+    background-color: var(--accent-gold);
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #b89148;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: var(--bg-card);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top: 2px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--accent-gold);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div {
+    margin-top: 1rem;
+}
