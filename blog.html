@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Historias, recetas y novedades de Delta Restaurant.">
+	<title>El blog de Delta | Delta Restaurant</title>
+	<style>
+		:root{--ink:#25271f;--muted:#73766c;--cream:#f7f5ee;--green:#394b37;--lime:#d4df9b;--line:#e4e1d7}
+		*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}
+		.topbar{background:var(--green);color:white;text-align:center;padding:8px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}header{max-width:1120px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:bold 1.8rem Georgia,serif;letter-spacing:-.06em}.brand span{color:#87945e}nav{display:flex;gap:28px;font-size:.88rem}nav a:hover,.link:hover{color:#78864f}
+		.hero{max-width:1120px;margin:auto;padding:68px 24px 48px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:#78864f;font-weight:bold}h1,h2,h3,p{margin-top:0}h1{font:400 clamp(3rem,6vw,5rem)/.98 Georgia,serif;letter-spacing:-.055em;margin:15px 0 20px}.hero p{max-width:440px;color:var(--muted);font-size:1.04rem}.hero-image{height:370px;background:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85') center/cover;position:relative;border-radius:3px}.image-note{position:absolute;bottom:18px;left:20px;color:#fff;text-transform:uppercase;font-size:.72rem;letter-spacing:.1em}.link{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:bold;border-bottom:1px solid currentColor;padding-bottom:4px}
+		.featured{max-width:1120px;margin:0 auto 68px;padding:0 24px}.feature-card{display:grid;grid-template-columns:1fr 1fr;background:var(--green);color:#fff}.feature-image{min-height:320px;background:url('https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85') center/cover}.feature-copy{align-self:center;padding:40px}.feature-copy .eyebrow{color:var(--lime)}.feature-copy h2{font:400 clamp(1.8rem,3vw,2.7rem)/1.12 Georgia,serif;margin:12px 0}.feature-copy p{color:#e0e4d8}
+		.stories{background:#fff;padding:64px 24px 76px}.inner{max-width:1072px;margin:auto}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.heading h2{font:400 clamp(2rem,4vw,3rem)/1 Georgia,serif;margin:8px 0 0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.filter{cursor:pointer;border:1px solid var(--line);border-radius:24px;padding:8px 15px;background:white;color:var(--muted);font:inherit;font-size:.8rem}.filter:hover,.filter.active{background:var(--green);border-color:var(--green);color:white}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.post[hidden]{display:none}.post-image{height:210px;background-position:center;background-size:cover;margin-bottom:16px}.meta{display:flex;gap:12px;color:#85877d;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase}.meta strong{color:#78864f}.post h3{font:400 1.5rem/1.2 Georgia,serif;margin:9px 0}.post p{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+		.newsletter{background:var(--lime);padding:52px 24px;text-align:center}.newsletter h2{font:400 clamp(2rem,4vw,3rem)/1.08 Georgia,serif;margin:10px 0}.newsletter p{color:#555c42;margin-bottom:20px}.subscribe{display:flex;gap:8px;max-width:440px;margin:auto}.subscribe input{flex:1;min-width:0;padding:12px 14px;border:1px solid #aeb77a;background:#fff;font:inherit}.subscribe button{padding:0 18px;border:0;background:var(--green);color:#fff;font:inherit;cursor:pointer}.message{min-height:1.5em;margin:12px 0 0!important;font-size:.85rem}footer{background:var(--green);color:#f5f4ed;padding:26px 24px}.footer-inner{max-width:1072px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.82rem}.footer-brand{font:bold 1.3rem Georgia,serif}
+		@media(max-width:720px){header{padding:18px;flex-wrap:wrap;justify-content:center;gap:14px}nav{width:100%;justify-content:center;gap:20px}.hero{padding:46px 20px 34px;grid-template-columns:1fr;gap:26px}.hero-image{height:280px}.featured{padding:0 20px;margin-bottom:48px}.feature-card{grid-template-columns:1fr}.feature-image{min-height:230px}.feature-copy{padding:28px}.stories{padding:48px 20px 58px}.grid{grid-template-columns:repeat(2,1fr);gap:26px 18px}.post-image{height:185px}}
+		@media(max-width:500px){nav{gap:15px;font-size:.8rem}.heading{display:block}.grid{grid-template-columns:1fr}.post-image{height:230px}.subscribe{flex-direction:column}.subscribe input,.subscribe button{min-height:46px}.footer-inner{flex-direction:column;text-align:center}}
+	</style>
+</head>
+<body>
+	<div class="topbar">Cocina honesta · Ingredientes de temporada · Buenos momentos</div>
+	<header><a class="brand" href="#inicio" aria-label="Delta Restaurant, inicio">delta<span>.</span></a><nav aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#historias">Historias</a><a href="#recetas">Recetas</a><a href="#newsletter">Contacto</a></nav></header>
+	<main>
+		<section class="hero" id="inicio"><div><span class="eyebrow">Desde nuestra cocina</span><h1>Un lugar para saborear las historias.</h1><p>En Delta compartimos lo que nos inspira: productos frescos, recetas de casa y esos pequeños detalles que hacen especial cada mesa.</p><a class="link" href="#historias">Explora el blog&nbsp; ↓</a></div><div class="hero-image" role="img" aria-label="Comedor acogedor de restaurante"><span class="image-note">Bienvenidos a nuestra mesa</span></div></section>
+		<section class="featured" id="recetas"><article class="feature-card"><div class="feature-image" role="img" aria-label="Ensalada fresca de temporada"></div><div class="feature-copy"><span class="eyebrow">En temporada · 6 min de lectura</span><h2>El sabor de lo que está en su mejor momento</h2><p>Elegir ingredientes de temporada es una forma sencilla de cocinar con más sabor. Te contamos qué buscamos en el mercado y cómo lo llevamos al plato.</p><a class="link" href="#historias">Leer la historia&nbsp; →</a></div></article></section>
+		<section class="stories" id="historias"><div class="inner"><div class="heading"><div><span class="eyebrow">Cuaderno de Delta</span><h2>Ideas para disfrutar</h2></div><span class="eyebrow">Historias frescas, cada semana</span></div>
+			<div class="filters" role="group" aria-label="Filtrar artículos"><button class="filter active" data-filter="todos">Todo</button><button class="filter" data-filter="recetas">Recetas</button><button class="filter" data-filter="ingredientes">Ingredientes</button><button class="filter" data-filter="momentos">Momentos Delta</button></div>
+			<div class="grid">
+				<article class="post" data-category="recetas"><div class="post-image" role="img" aria-label="Pasta recién preparada" style="background-image:url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80')"></div><div class="meta"><strong>Recetas</strong><span>12 junio · 5 min</span></div><h3>Una pasta sencilla, hecha para compartir</h3><p>Buenos ingredientes, una salsa sin prisa y una mesa llena: a veces no hace falta nada más.</p><a class="link" href="#newsletter">Leer artículo&nbsp; →</a></article>
+				<article class="post" data-category="ingredientes"><div class="post-image" role="img" aria-label="Verduras frescas de temporada" style="background-image:url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80')"></div><div class="meta"><strong>Ingredientes</strong><span>04 junio · 4 min</span></div><h3>Del mercado a nuestra cocina</h3><p>Conocemos a quienes cultivan los ingredientes que dan vida a nuestros platos.</p><a class="link" href="#newsletter">Leer artículo&nbsp; →</a></article>
+				<article class="post" data-category="momentos"><div class="post-image" role="img" aria-label="Mesa preparada en un restaurante" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80')"></div><div class="meta"><strong>Momentos Delta</strong><span>28 mayo · 3 min</span></div><h3>La sobremesa también es parte del menú</h3><p>Una conversación más, un café y el placer de quedarse un ratito más.</p><a class="link" href="#newsletter">Leer artículo&nbsp; →</a></article>
+			</div>
+		</div></section>
+		<section class="newsletter" id="newsletter"><span class="eyebrow">Una nota de Delta</span><h2>Un poquito de sabor en tu bandeja.</h2><p>Recibe nuestras novedades, recetas e historias. Sin prisa y sin spam.</p><form class="subscribe" id="subscribe-form"><label for="email" style="position:absolute;left:-9999px">Tu correo electrónico</label><input id="email" type="email" placeholder="Tu correo electrónico" required><button type="submit">Quiero recibirlo</button></form><p class="message" id="message" aria-live="polite"></p></section>
+	</main>
+	<footer><div class="footer-inner"><a class="footer-brand" href="#inicio">delta.</a><span>Hecho con cariño, servido en Delta Restaurant.</span><span>© <span id="year"></span> Delta Restaurant</span></div></footer>
+	<script>
+		const buttons=document.querySelectorAll('.filter');
+		const posts=document.querySelectorAll('.post');
+		buttons.forEach(button=>button.addEventListener('click',()=>{
+			buttons.forEach(item=>item.classList.remove('active'));
+			button.classList.add('active');
+			posts.forEach(post=>post.hidden=button.dataset.filter!=='todos'&&post.dataset.category!==button.dataset.filter);
+		}));
+		document.getElementById('subscribe-form').addEventListener('submit',event=>{
+			event.preventDefault();
+			document.getElementById('message').textContent='¡Gracias! Te tendremos al tanto de las novedades de Delta.';
+			event.currentTarget.reset();
+		});
+		document.getElementById('year').textContent=new Date().getFullYear();
+	</script>
+</body>
+</html>
